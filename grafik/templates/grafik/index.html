@@ -1,0 +1,9 @@
+{% if all_classes %}
+    <ul>
+    {% for class in all_classes %}
+        <li>{{class.name}} {{class.date}}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No classes found.</p>
+{% endif %}
